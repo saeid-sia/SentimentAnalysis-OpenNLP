@@ -26,8 +26,8 @@ object MainClass {
 
   def trainingModel()= {
 
-    val trainingFile = new FileInputStream("C:\\en-movie.train")
-    val modelFile = new FileOutputStream("C:\\en-movie.model")
+    val trainingFile = new FileInputStream("en-movie.train")
+    val modelFile = new FileOutputStream("en-movie.model")
     val plainText = new PlainTextByLineStream( new InputStreamFactory() {
            def createInputStream: InputStream = {
          trainingFile
@@ -41,7 +41,7 @@ object MainClass {
 
   def executingModel()= {
 
-    val modelIn = new FileInputStream(new File("C:\\en-movie.model"))
+    val modelIn = new FileInputStream(new File("en-movie.model"))
     val model = new DoccatModel(modelIn)
     val categorizer = new DocumentCategorizerME(model)
     val result  = categorizer.categorize(review)
