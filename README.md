@@ -3,5 +3,3 @@ Sentiment analysis or opinion mining is subset of NLP. It revolves around text c
 
 
 
-positive peck focuses his story on familiar material that strives to give an honest portrayal of patrice lumumba , 
-his friend and foes and the independence movements that gripped africa in the 50's and 60's . 
